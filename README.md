@@ -1,4 +1,4 @@
-# Laravel Local Environment Setup
+# Local Environment Setup
 This environment only works on MacOS, sorry linux/windows users... check out [Homestead](https://laravel.com/docs/master/homestead)
 
 __*Note*__ `$` represents a terminal command and should not be typed out.
