@@ -31,13 +31,6 @@ $ cd
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-OR
-
-### Update
-```shell
-$ brew update
-```
-
 ## Install PHP
 ```shell
 $ brew install homebrew/php/php71
