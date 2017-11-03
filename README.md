@@ -26,7 +26,6 @@ $ cd
     - [Link single directory](#markdown-header-link-single-directory)
 
 ## Update or Install Homebrew
-### Install
 ```shell
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
