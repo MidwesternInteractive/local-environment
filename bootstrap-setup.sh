@@ -54,8 +54,13 @@ if [ "$composerinstalled" == "n" ]; then
     printf "\nAdding composer to PATH, you will most likely be asked for your users password...\n"
     echo $HOME/.composer/vendor/bin >> /etc/paths
 
-    printf "\nSourcing BASH...\n"
-    source ~/.zshrc
+    printf "\nAre you using ZSH for your terminal? [y/n]\n"
+    read zshinstalled
+
+    if ["$zshinstalled" == "y"]; then
+        source ~/.zshrc
+    fi
+
     source ~/.bash_profile
     source ~/.profile
 fi
