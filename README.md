@@ -39,8 +39,9 @@ $ git clone https://github.com/MidwesternInteractive/local-environment.git
 #### Run Script
 ```shell
 $ cd local-environment
-$ sh bootstrap-setup.sh
+$ sudo sh bootstrap-setup.sh
 ```
+This will ask for your user password
 
 ## Update or Install Homebrew
 ```shell

@@ -52,7 +52,7 @@ if [ "$composerinstalled" == "n" ]; then
     mv composer.phar /usr/local/bin/composer
 
     printf "\nAdding composer to PATH, you will most likely be asked for your users password...\n"
-    sudo echo $HOME/.composer/vendor/bin >> /etc/paths
+    echo $HOME/.composer/vendor/bin >> /etc/paths
 
     printf "\nSourcing BASH...\n"
     source ~/.zshrc
