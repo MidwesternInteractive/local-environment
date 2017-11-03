@@ -31,12 +31,12 @@ $ cd
 ## Walk Through
 For a Walk Through of the set up you may run the bootstrap shell setup. Otherwise skip to [Update or Install Homebrew](#update-or-install-homebrew)
 
-### Clone Repository
+#### Clone Repository
 ```shell
 $ git clone https://github.com/MidwesternInteractive/local-environment.git
 ```
 
-### Run Script
+#### Run Script
 ```shell
 $ cd local-environment
 $ sh bootstrap-setup.sh
