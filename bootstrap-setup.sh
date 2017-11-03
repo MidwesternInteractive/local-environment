@@ -53,17 +53,6 @@ if [ "$composerinstalled" == "n" ]; then
 
     printf "\nAdding composer to PATH, you will most likely be asked for your users password...\n"
     echo $HOME/.composer/vendor/bin >> /etc/paths
-
-    printf "\nAre you using ZSH for your terminal? [y/n]\n"
-    read zshinstalled
-
-    if ["$zshinstalled" == "y"]; then
-        source ~/.zshrc
-    fi
-
-    printf "\nSourcing Bash...\n"
-    source ~/.bash_profile
-    source ~/.profile
 fi
 
 printf "\nHave you installed Nope/NPM? [y/n] "
@@ -73,6 +62,17 @@ if [ "$nodeinstalled" == "n" ]; then
     printf "\nInstalling Node/NPM, please wait...\n"
     brew install node
 fi
+
+# printf "\nAre you using ZSH for your terminal? [y/n] "
+# read zshinstalled
+
+# if [ "$zshinstalled" == "y" ]; then
+#     source ~/.zshrc
+# fi
+
+# printf "\nSourcing Bash...\n"
+# source ~/.profile
+# source ~/.bash_profile
 
 if [ "$composerinstalled" == "n" ]; then
     printf "\nGetting Valet installer, please wait...\n"
