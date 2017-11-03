@@ -61,6 +61,7 @@ if [ "$composerinstalled" == "n" ]; then
         source ~/.zshrc
     fi
 
+    printf "\nSourcing Bash...\n"
     source ~/.bash_profile
     source ~/.profile
 fi
