@@ -8,9 +8,6 @@ All commands (unless otherwise specified) should be ran from home dir:
 $ cd
 ```
 
-  - [Walk Through](#walk-through)
-    - [Clone Repository](#clone-repository)
-    - [Run Script](#run-script)
   - [Update or Install Homebrew](#update-or-install-homebrew)
     - [Install](#install)
     - [Update](#update)
@@ -28,20 +25,6 @@ $ cd
     - [Park entire directory](#park-entire-directory)
     - [Link single directory](#link-single-directory)
 
-## Walk Through
-For a Walk Through of the set up you may run the bootstrap shell setup. Otherwise skip to [Update or Install Homebrew](#update-or-install-homebrew)
-
-#### Clone Repository
-```shell
-$ git clone https://github.com/MidwesternInteractive/local-environment.git
-```
-
-#### Run Script
-```shell
-$ cd local-environment
-$ sudo sh bootstrap-setup.sh
-```
-This will ask for your user password
 
 ## Update or Install Homebrew
 ```shell
