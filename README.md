@@ -8,6 +8,9 @@ All commands (unless otherwise specified) should be ran from home dir:
 $ cd
 ```
 
+  - [Walk Through](#markdown-header-walk-through)
+    - [Clone Repository](#markdown-header-clone-repository)
+    - [Run Script](#markdown-header-run-script)
   - [Update or Install Homebrew](#markdown-header-update-or-install-homebrew)
     - [Install](#markdown-header-install)
     - [Update](#markdown-header-update)
@@ -24,6 +27,20 @@ $ cd
     - [Serving in a nutshell](#markdown-header-serving-in-a-nutshell)
     - [Park entire directory](#markdown-header-park-entire-directory)
     - [Link single directory](#markdown-header-link-single-directory)
+
+## Walk Through
+For a Walk Through of the set up you may run the bootstrap shell setup. Otherwise skip to [Update or Install Homebrew](#markdown-header-update-or-install-homebrew)
+
+### Clone Repository
+```shell
+$ git clone https://github.com/MidwesternInteractive/local-environment.git
+```
+
+### Run Script
+```shell
+$ cd local-environment
+$ sh bootstrap-setup.sh
+```
 
 ## Update or Install Homebrew
 ```shell
@@ -74,10 +91,7 @@ $ sudo vim /etc/paths
 ## Install Node/NPM
 ```shell
 $ brew install node
-$ node -v
-$ npm -v
 ```
-Commands 2 and 3 should return the versions of Node and NPM if install properly.
 
 ## Valet Installer
 ```shell
