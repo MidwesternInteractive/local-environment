@@ -29,7 +29,7 @@ $ cd
     - [Link single directory](#link-single-directory)
 
 ## Walk Through
-For a Walk Through of the set up you may run the bootstrap shell setup. Otherwise skip to [Update or Install Homebrew](#markdown-header-update-or-install-homebrew)
+For a Walk Through of the set up you may run the bootstrap shell setup. Otherwise skip to [Update or Install Homebrew](#update-or-install-homebrew)
 
 ### Clone Repository
 ```shell
