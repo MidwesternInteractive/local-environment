@@ -37,6 +37,11 @@ $ brew install homebrew/php/php71
 ```
 7.1 was latest at the time. Check for latest release or the recommended version on the [valet](https://laravel.com/docs/master/valet#installation) docs.
 
+__*Note*__ if you having issues with your php version try running the following command
+```shell
+$ export PATH=/usr/local/php5/bin:$PATH
+```
+
 ## Install MySQL
 ```shell
 $ brew install mysql
