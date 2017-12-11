@@ -1,11 +1,11 @@
 # Local Environment Setup
 This environment only works on MacOS, sorry linux/windows users... check out [Homestead](https://laravel.com/docs/master/homestead)
 
-__*Note*__ `$` represents a terminal command and should not be typed out.
+__*Note*__ All code blocks represent terminal commands
 
 All commands (unless otherwise specified) should be ran from home dir:
 ```shell
-$ cd
+cd
 ```
 
   - [Update or Install Homebrew](#update-or-install-homebrew)
@@ -28,24 +28,24 @@ $ cd
 
 ## Update or Install Homebrew
 ```shell
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 ## Install PHP
 ```shell
-$ brew install homebrew/php/php71
+brew install homebrew/php/php71
 ```
 7.1 was latest at the time. Check for latest release or the recommended version on the [valet](https://laravel.com/docs/master/valet#installation) docs.
 
 __*Note*__ if you having issues with your php version try running the following command
 ```shell
-$ export PATH=/usr/local/php5/bin:$PATH
+export PATH=/usr/local/php5/bin:$PATH
 ```
 
 ## Install MySQL
 ```shell
-$ brew install mysql
-$ brew services start mysql
+brew install mysql
+brew services start mysql
 ```
 You can download [Sequel Pro](https://sequelpro.com/download) and connect to your local MySQL server.
 
@@ -57,20 +57,20 @@ Leave everything else blank and connect.
 ## Install Composer
 ### Download
 ```shell
-$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-$ php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-$ php composer-setup.php
-$ php -r "unlink('composer-setup.php');"
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
 ```
 
 ### Install Globally
 ```shell
-$ mv composer.phar /usr/local/bin/composer
+mv composer.phar /usr/local/bin/composer
 ```
 
 ### Add to your Path
 ```shell
-$ sudo vim /etc/paths
+sudo vim /etc/paths
 ```
 
   - You can use any method of editing the file
@@ -79,19 +79,25 @@ $ sudo vim /etc/paths
 
 ## Install Node/NPM
 ```shell
-$ brew install node
+brew install node
 ```
 
 ## Valet Installer
 ```shell
-$ composer global require laravel/valet
+composer global require laravel/valet
 ```
 
 ### Install Valet
 ```shell
-$ valet install
+valet install
 ```
 This will most likely prompt for the root password
+
+### Set TLD
+We have to change the TLD from the default `.dev` to `.loc` due to chroms recent security change to `.dev`
+```shell
+valet domain loc
+```
 
 ## Serve up your sites
 Read the [valet](https://laravel.com/docs/master/valet#serving-sites) documentation on serving sites.
@@ -101,17 +107,17 @@ If you already have a pretty good size projects folder I would recommend linking
 ### Serving in a nutshell
 #### Park entire directory
 ```shell
-$ cd ~/projects
-$ mkdir valet && cd valet
-$ valet park
+cd ~/projects
+mkdir valet && cd valet
+valet park
 ```
 Every directory in the newly created `valet` directory will be automatically accessible at `directory-name.dev`.
 
 #### Link single directory
 ```shell
-$ cd ~/projects
-$ mkdir app-name && cd app-name
-$ valet link app-name
+cd ~/projects
+mkdir app-name && cd app-name
+valet link app-name
 ```
 The site will now be available at `app-name.dev`.
 
