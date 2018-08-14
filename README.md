@@ -33,9 +33,9 @@ cd
 
 ## Install PHP
 ```shell
-brew install homebrew/php/php71
+brew install php@7.2
 ```
-7.1 was latest at the time. Check for latest release or the recommended version on the [valet](https://laravel.com/docs/master/valet#installation) docs.
+7.2 was latest at the time. Check for latest release or the recommended version on the [valet](https://laravel.com/docs/master/valet#installation) docs.
 
 __*Note*__ if you having issues with your php version try running the following command
 ```shell
@@ -47,7 +47,13 @@ export PATH=/usr/local/php5/bin:$PATH
 brew install mysql
 brew services start mysql
 ```
-You can download [Sequel Pro](https://sequelpro.com/download) and connect to your local MySQL server.
+If you are using MySQL 8 or higher please run the following commands:
+```shell
+sudo mysql
+ALTER USER ‘root’@‘localhost’ IDENTIFIED WITH mysql_native_password BY ‘’;
+```
+
+You can now download [Sequel Pro](https://sequelpro.com/download) and connect to your local MySQL server.
 
   - Host: 127.0.0.1
   - User: root
