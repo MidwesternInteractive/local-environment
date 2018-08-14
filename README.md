@@ -44,7 +44,7 @@ export PATH=/usr/local/php5/bin:$PATH
 
 ## Install MySQL
 ```shell
-brew install mysql
+brew install mysql@5.7
 brew services start mysql
 ```
 If you are using MySQL 8 or higher please run the following commands:
