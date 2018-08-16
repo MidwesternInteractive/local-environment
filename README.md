@@ -85,7 +85,7 @@ sudo vim /etc/paths
 
 ## Install Node/NPM
 ```shell
-brew install node
+brew install node@8
 ```
 
 ## Valet Installer
