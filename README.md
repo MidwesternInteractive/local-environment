@@ -125,6 +125,6 @@ cd ~/projects
 mkdir app-name && cd app-name
 valet link app-name
 ```
-The site will now be available at `app-name.dev`.
+The site will now be available at `app-name.loc`.
 
 [Full Valet Documentation](https://laravel.com/docs/master/valet)
